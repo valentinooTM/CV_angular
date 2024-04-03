@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333;
+    background-color: #e9ecef;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -8,18 +8,17 @@
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: darkgray;
 }
   
 .navbar a.active {
-    background-color: #4CAF50;
+    background-color: gray;
     color: white;
 }

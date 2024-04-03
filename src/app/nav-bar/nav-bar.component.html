@@ -2,5 +2,8 @@
     <a routerLink="/education" routerLinkActive="active">Edukacja</a>
     <a routerLink="/interests" routerLinkActive="active">Zainteresowania</a>
     <a routerLink="/experience" routerLinkActive="active">Doświadczenie</a>
-    <a routerLink="/contact" routerLinkActive="active">Kontakt</a>
+    <a *ngIf="currentLan===1" routerLink="/contact" routerLinkActive="active">Kontakt</a>
+    <a *ngIf="currentLan===2" routerLink="/contact" routerLinkActive="active">Contact</a>
+    <button (click)="changeLan(1)">Polski</button>
+    <button (click)="changeLan(2)">English</button>
 </nav>

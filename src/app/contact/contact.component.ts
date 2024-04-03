@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -16,8 +18,7 @@ export class ContactComponent {
   formData: any = {};
 
   submitForm() {
-    // Tutaj możesz dodać logikę wysyłania danych formularza, np. wywołanie usługi HTTP do wysłania danych na serwer
     console.log('Dane formularza:', this.formData);
-    // W tym przykładzie po prostu wypisujemy dane w konsoli
   }
+
 }
